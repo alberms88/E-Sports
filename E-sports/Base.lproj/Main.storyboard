@@ -41,7 +41,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="WHP-Su-3yg">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="WHP-Su-3yg">
                                 <rect key="frame" x="0.0" y="-24" width="414" height="920"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -115,8 +115,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0W-Tg-Gvk">
-                                <rect key="frame" x="176" y="448" width="100" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="wvS-ZT-5ZE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0W-Tg-Gvk">
+                                <rect key="frame" x="157" y="654" width="100" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="7vR-Dl-870"/>
@@ -131,7 +134,11 @@
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="y0W-Tg-Gvk" firstAttribute="centerY" secondItem="N8J-5V-w4q" secondAttribute="centerY" constant="42" id="GGM-da-s1R"/>
+                            <constraint firstItem="wvS-ZT-5ZE" firstAttribute="trailing" secondItem="Chk-MN-li9" secondAttribute="trailing" id="Onh-t6-MC6"/>
                             <constraint firstItem="y0W-Tg-Gvk" firstAttribute="centerX" secondItem="N8J-5V-w4q" secondAttribute="centerX" constant="19" id="VEa-b7-ynl"/>
+                            <constraint firstItem="wvS-ZT-5ZE" firstAttribute="leading" secondItem="Chk-MN-li9" secondAttribute="leading" id="rFW-ti-8bK"/>
+                            <constraint firstItem="wvS-ZT-5ZE" firstAttribute="top" secondItem="Chk-MN-li9" secondAttribute="top" id="y0z-vV-851"/>
+                            <constraint firstItem="wvS-ZT-5ZE" firstAttribute="bottom" secondItem="Chk-MN-li9" secondAttribute="bottom" id="y9w-ya-1G7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Chk-MN-li9"/>
                     </view>
@@ -678,6 +685,7 @@
         <image name="1" width="372" height="762"/>
         <image name="2" width="375" height="752"/>
         <image name="3" width="373" height="763"/>
+        <image name="4" width="372" height="762"/>
         <image name="AST" width="400" height="400"/>
         <image name="FNC" width="400" height="400"/>
         <image name="G2E" width="400" height="463"/>
