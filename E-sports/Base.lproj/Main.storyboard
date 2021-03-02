@@ -25,7 +25,7 @@
                         <viewLayoutGuide key="safeArea" id="wQO-yh-nVf"/>
                     </view>
                     <tabBarItem key="tabBarItem" image="news selec" selectedImage="news selec" springLoaded="YES" id="gSD-Oh-yGg">
-                        <inset key="imageInsets" minX="45" minY="15" maxX="45" maxY="0.0"/>
+                        <inset key="imageInsets" minX="45" minY="20" maxX="45" maxY="0.0"/>
                         <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                 </viewController>
@@ -50,7 +50,7 @@
                         <viewLayoutGuide key="safeArea" id="FNC-fF-mME"/>
                     </view>
                     <tabBarItem key="tabBarItem" image="calificacion selec" selectedImage="calificacion selec" id="iYo-Wd-hpq">
-                        <inset key="imageInsets" minX="45" minY="15" maxX="45" maxY="0.0"/>
+                        <inset key="imageInsets" minX="45" minY="21" maxX="45" maxY="0.0"/>
                     </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="olK-tV-J75" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -79,7 +79,7 @@
                         <viewLayoutGuide key="safeArea" id="wOG-oK-6Vs"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="G2E" selectedImage="G2E" id="QRd-fc-dPw">
-                        <inset key="imageInsets" minX="150" minY="15" maxX="150" maxY="16"/>
+                        <inset key="imageInsets" minX="165" minY="20" maxX="165" maxY="16"/>
                         <color key="badgeColor" name="AccentColor"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
@@ -98,7 +98,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Wkk-kz-4R2"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="9EA-jN-i0P"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="9EA-jN-i0P">
+                        <inset key="imageInsets" minX="45" minY="20" maxX="45" maxY="0.0"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZFe-dE-8xB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -109,7 +111,7 @@
             <objects>
                 <navigationController id="Qot-P5-TfJ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" image="calendario selec" id="LJX-OY-DxL">
-                        <inset key="imageInsets" minX="46" minY="15" maxX="46" maxY="0.0"/>
+                        <inset key="imageInsets" minX="45" minY="20" maxX="45" maxY="0.0"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="S1t-Nq-C0P">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
