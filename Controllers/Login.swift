@@ -14,15 +14,9 @@ class Login: UIViewController {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
-        
-
         let vc = storyboard.instantiateViewController(identifier: "Register") as! Registro
 
-                
-
         vc.modalPresentationStyle = .overFullScreen
-
-        
 
         present(vc, animated: true)
        
@@ -32,15 +26,9 @@ class Login: UIViewController {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
-        
-
         let vc = storyboard.instantiateViewController(identifier: "ChooseG") as! ChooseGame
 
-                
-
         vc.modalPresentationStyle = .overFullScreen
-
-        
 
         present(vc, animated: true)
     }

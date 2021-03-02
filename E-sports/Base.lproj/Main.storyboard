@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a9X-Ag-Pou">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="iIh-Ov-RZz">
             <objects>
-                <viewController id="HXb-5E-Tas" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TabC" id="HXb-5E-Tas" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bMA-KV-EW8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,7 +31,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yjM-on-qK8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3978.2608695652175" y="1634.5982142857142"/>
+            <point key="canvasLocation" x="-710" y="1635"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="DAH-On-WhB">
@@ -55,7 +55,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="olK-tV-J75" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3178.2608695652175" y="1634.5982142857142"/>
+            <point key="canvasLocation" x="-42" y="1635"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hNg-2m-kNR">
@@ -86,7 +86,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qv2-Ox-e2W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2442.0289855072465" y="1634.5982142857142"/>
+            <point key="canvasLocation" x="642" y="1635"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="pQb-pp-4D5">
+            <objects>
+                <viewController id="6iD-KP-fXP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sLh-DQ-DBX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Wkk-kz-4R2"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="9EA-jN-i0P"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZFe-dE-8xB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1980" y="1635"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vFx-lw-ZJM">
@@ -105,7 +121,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mh4-1a-GMz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1858" y="905"/>
+            <point key="canvasLocation" x="1312" y="1635"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dqz-Oq-Npa">
@@ -147,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A1a-Aa-aAO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-952.17391304347836" y="894.64285714285711"/>
+            <point key="canvasLocation" x="1980" y="905"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ldp-nW-aUn">
@@ -164,7 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6uK-ri-ZJd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-952" y="1635"/>
+            <point key="canvasLocation" x="2754" y="905"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="NCv-GN-BQ4">
@@ -179,15 +195,16 @@
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="mc8-ah-LiV" kind="relationship" relationship="viewControllers" id="vFC-Wh-fMQ"/>
-                        <segue destination="HXb-5E-Tas" kind="relationship" relationship="viewControllers" id="QW4-Qu-wxT"/>
-                        <segue destination="h0z-OY-WmM" kind="relationship" relationship="viewControllers" id="Lbh-Nf-yAh"/>
-                        <segue destination="Qot-P5-TfJ" kind="relationship" relationship="viewControllers" id="K1F-gC-j2F"/>
+                        <segue destination="HXb-5E-Tas" kind="relationship" relationship="viewControllers" id="RYP-8E-73Z"/>
+                        <segue destination="h0z-OY-WmM" kind="relationship" relationship="viewControllers" id="aZ0-Xj-x1v"/>
+                        <segue destination="mc8-ah-LiV" kind="relationship" relationship="viewControllers" id="o5F-Dy-W5S"/>
+                        <segue destination="Qot-P5-TfJ" kind="relationship" relationship="viewControllers" id="710-F0-Z71"/>
+                        <segue destination="6iD-KP-fXP" kind="relationship" relationship="viewControllers" id="HSp-Au-4Vt"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dcc-Ff-535" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3210" y="906"/>
+            <point key="canvasLocation" x="525" y="905"/>
         </scene>
         <!--Login-->
         <scene sceneID="tne-QT-ifu">
@@ -537,6 +554,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1u-In-Ltm">
                                 <rect key="frame" x="157" y="762" width="100" height="100"/>
                                 <state key="normal" title="Button" image="flecha final"/>
+                                <connections>
+                                    <action selector="League_Team:" destination="pWA-dq-wjP" eventType="touchUpInside" id="k4a-ez-NEJ"/>
+                                </connections>
                             </button>
                             <scrollView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" indicatorStyle="white" delaysContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9V2-Bb-RLk">
                                 <rect key="frame" x="37" y="237" width="340" height="480"/>
@@ -692,7 +712,7 @@
                                 <rect key="frame" x="157" y="762" width="100" height="100"/>
                                 <state key="normal" title="Button" image="flecha final"/>
                                 <connections>
-                                    <action selector="ChooseTeam_ChooseLeague:" destination="5uD-wK-wlZ" eventType="touchUpInside" id="W0g-eg-SVu"/>
+                                    <segue destination="a9X-Ag-Pou" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="JMO-1Z-ts7"/>
                                 </connections>
                             </button>
                             <scrollView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" indicatorStyle="white" delaysContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dW-vI-9Xd">

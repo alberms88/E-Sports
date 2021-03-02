@@ -22,7 +22,7 @@ class ChooseGame: UIViewController {
 
         
 
-        let vc = storyboard.instantiateViewController(identifier: "ChooseT") as! ChooseTeam
+        let vc = storyboard.instantiateViewController(identifier: "ChooseL") as! ChooseLeague
         
 
                 
