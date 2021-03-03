@@ -14,24 +14,5 @@ class ChooseLeague: UIViewController {
 
     }
     
-    @IBAction func League_Team(_ sender: Any) {
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-
-        
-
-        let vc = storyboard.instantiateViewController(identifier: "ChooseT") as! ChooseTeam
-        
-
-                
-
-        vc.modalPresentationStyle = .overFullScreen
-
-        
-
-        present(vc, animated: true)
-    }
-    
-
 
 }
