@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D259F1725EE5A8700FD9437 /* ChooseTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D259F1625EE5A8700FD9437 /* ChooseTeam.swift */; };
+		0DF0695825F1169B00E7A7BB /* EquipoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF0695725F1169B00E7A7BB /* EquipoController.swift */; };
 		0E39E94A25E4F87600E1C231 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E39E94925E4F87600E1C231 /* AppDelegate.swift */; };
 		0E39E94C25E4F87600E1C231 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E39E94B25E4F87600E1C231 /* SceneDelegate.swift */; };
 		0E39E94E25E4F87600E1C231 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E39E94D25E4F87600E1C231 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		0D259F1625EE5A8700FD9437 /* ChooseTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTeam.swift; sourceTree = "<group>"; };
+		0DF0695725F1169B00E7A7BB /* EquipoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipoController.swift; sourceTree = "<group>"; };
 		0E39E94625E4F87600E1C231 /* E-sports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-sports.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E39E94925E4F87600E1C231 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E39E94B25E4F87600E1C231 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				0E8FECD625E667550051981F /* ChooseGame.swift */,
 				0EB3AB9725E87793003D0CBD /* ChooseLeague.swift */,
 				0D259F1625EE5A8700FD9437 /* ChooseTeam.swift */,
+				0DF0695725F1169B00E7A7BB /* EquipoController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				0E39E94A25E4F87600E1C231 /* AppDelegate.swift in Sources */,
 				0E39E94C25E4F87600E1C231 /* SceneDelegate.swift in Sources */,
 				0E8FECD725E667550051981F /* ChooseGame.swift in Sources */,
+				0DF0695825F1169B00E7A7BB /* EquipoController.swift in Sources */,
 				0E39E96325E4FF4700E1C231 /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
