@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NVj-sx-BWK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a9X-Ag-Pou">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -244,6 +244,16 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGz-1C-kiN">
+                                <rect key="frame" x="170" y="81" width="74" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="b0Q-KV-9Lq"/>
+                                    <constraint firstAttribute="height" constant="36" id="bZI-Lb-nHt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
@@ -254,6 +264,8 @@
                             <constraint firstItem="ija-Cw-Tbp" firstAttribute="centerY" secondItem="7Ag-dF-6Yl" secondAttribute="centerY" constant="-260" id="FyS-IC-5YX"/>
                             <constraint firstItem="OdK-5R-Syq" firstAttribute="centerX" secondItem="7Ag-dF-6Yl" secondAttribute="centerX" id="Hyd-AM-nsJ"/>
                             <constraint firstItem="jIb-gH-Dgp" firstAttribute="centerY" secondItem="7Ag-dF-6Yl" secondAttribute="centerY" constant="-206.5" id="MRt-Oj-W6S"/>
+                            <constraint firstItem="vGz-1C-kiN" firstAttribute="centerX" secondItem="7Ag-dF-6Yl" secondAttribute="centerX" id="PKC-DX-I3n"/>
+                            <constraint firstItem="vGz-1C-kiN" firstAttribute="centerY" secondItem="7Ag-dF-6Yl" secondAttribute="centerY" constant="-349" id="SRq-1o-gIf"/>
                             <constraint firstItem="Bkq-cy-q0U" firstAttribute="centerX" secondItem="7Ag-dF-6Yl" secondAttribute="centerX" constant="-56.5" id="Slt-bH-YuS"/>
                             <constraint firstItem="ija-Cw-Tbp" firstAttribute="centerX" secondItem="7Ag-dF-6Yl" secondAttribute="centerX" id="XKD-gE-2f4"/>
                             <constraint firstItem="BHT-xt-UV2" firstAttribute="centerY" secondItem="7Ag-dF-6Yl" secondAttribute="centerY" constant="-231.5" id="fo3-Dt-eyT"/>
