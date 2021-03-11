@@ -22,6 +22,7 @@
 		0E39E96625E5002100E1C231 /* Registro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E39E96525E5002100E1C231 /* Registro.swift */; };
 		0E8FECD725E667550051981F /* ChooseGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8FECD625E667550051981F /* ChooseGame.swift */; };
 		0EB3AB9825E87793003D0CBD /* ChooseLeague.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB3AB9725E87793003D0CBD /* ChooseLeague.swift */; };
+		6EC188A6515F36775DB80B4B /* Pods_E_sports.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 721503ABA1BC5AC12ECCC24C /* Pods_E_sports.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,9 @@
 		0E39E96525E5002100E1C231 /* Registro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registro.swift; sourceTree = "<group>"; };
 		0E8FECD625E667550051981F /* ChooseGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseGame.swift; sourceTree = "<group>"; };
 		0EB3AB9725E87793003D0CBD /* ChooseLeague.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLeague.swift; sourceTree = "<group>"; };
+		721503ABA1BC5AC12ECCC24C /* Pods_E_sports.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_sports.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D6CA83F41493CE54856A27 /* Pods-E-sports.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-sports.debug.xcconfig"; path = "Target Support Files/Pods-E-sports/Pods-E-sports.debug.xcconfig"; sourceTree = "<group>"; };
+		E1BF1AF50DB8A999A262ACD1 /* Pods-E-sports.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-sports.release.xcconfig"; path = "Target Support Files/Pods-E-sports/Pods-E-sports.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,18 +53,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EC188A6515F36775DB80B4B /* Pods_E_sports.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0577E405DE7B1B6135D4ED2F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84D6CA83F41493CE54856A27 /* Pods-E-sports.debug.xcconfig */,
+				E1BF1AF50DB8A999A262ACD1 /* Pods-E-sports.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		0E39E93D25E4F87600E1C231 = {
 			isa = PBXGroup;
 			children = (
 				0E39E96125E4FF0300E1C231 /* Controllers */,
 				0E39E94825E4F87600E1C231 /* E-sports */,
 				0E39E94725E4F87600E1C231 /* Products */,
+				0577E405DE7B1B6135D4ED2F /* Pods */,
+				739597DEB5404665F05504E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +119,14 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		739597DEB5404665F05504E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				721503ABA1BC5AC12ECCC24C /* Pods_E_sports.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +134,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E39E95A25E4F87700E1C231 /* Build configuration list for PBXNativeTarget "E-sports" */;
 			buildPhases = (
+				429C2C87CDEA305E2ADA5708 /* [CP] Check Pods Manifest.lock */,
 				0E39E94225E4F87600E1C231 /* Sources */,
 				0E39E94325E4F87600E1C231 /* Frameworks */,
 				0E39E94425E4F87600E1C231 /* Resources */,
+				83E51D0BE0BDEC8BCA1FC06D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,6 +193,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		429C2C87CDEA305E2ADA5708 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-E-sports-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83E51D0BE0BDEC8BCA1FC06D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-E-sports/Pods-E-sports-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-E-sports/Pods-E-sports-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-E-sports/Pods-E-sports-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0E39E94225E4F87600E1C231 /* Sources */ = {
@@ -327,6 +396,7 @@
 		};
 		0E39E95B25E4F87700E1C231 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84D6CA83F41493CE54856A27 /* Pods-E-sports.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -346,6 +416,7 @@
 		};
 		0E39E95C25E4F87700E1C231 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1BF1AF50DB8A999A262ACD1 /* Pods-E-sports.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

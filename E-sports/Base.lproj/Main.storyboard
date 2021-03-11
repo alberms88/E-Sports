@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2no-Ea-pJk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -553,8 +553,8 @@
                         <segue destination="HXb-5E-Tas" kind="relationship" relationship="viewControllers" id="qHK-DX-yhl"/>
                         <segue destination="2no-Ea-pJk" kind="relationship" relationship="viewControllers" id="59w-1I-p4o"/>
                         <segue destination="mc8-ah-LiV" kind="relationship" relationship="viewControllers" id="BRX-6D-khR"/>
-                        <segue destination="6iD-KP-fXP" kind="relationship" relationship="viewControllers" id="KDo-su-09s"/>
                         <segue destination="NVj-sx-BWK" kind="relationship" relationship="viewControllers" id="nQ5-9o-YSM"/>
+                        <segue destination="6iD-KP-fXP" kind="relationship" relationship="viewControllers" id="KY2-ZJ-nBB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dcc-Ff-535" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1639,8 +1639,9 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="VbY-SR-tru" firstAttribute="bottom" secondItem="k1s-CG-pK9" secondAttribute="bottom" constant="352" id="Byv-lN-xEE"/>
-                            <constraint firstItem="k1s-CG-pK9" firstAttribute="centerX" secondItem="gNa-WY-TeM" secondAttribute="centerX" id="EBi-Cj-hPF"/>
+                            <constraint firstItem="k1s-CG-pK9" firstAttribute="trailing" secondItem="VbY-SR-tru" secondAttribute="trailing" id="H1C-aF-4Rv"/>
+                            <constraint firstItem="k1s-CG-pK9" firstAttribute="top" secondItem="gNa-WY-TeM" secondAttribute="top" id="fNz-x8-ae7"/>
+                            <constraint firstItem="k1s-CG-pK9" firstAttribute="leading" secondItem="VbY-SR-tru" secondAttribute="leading" id="m2C-Qy-lct"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VbY-SR-tru"/>
                     </view>
