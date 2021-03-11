@@ -13,6 +13,9 @@ class EquipoController: UIViewController {
     var Noticias : UIViewController?
     var Partidos : UIViewController?
     
+    @IBOutlet weak var LogoEquipo: UIImageView!
+    
+    
     private var activeViewController : UIViewController?{
 
         didSet {
