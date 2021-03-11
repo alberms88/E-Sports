@@ -682,7 +682,7 @@
                                     <constraint firstAttribute="height" constant="40" id="ayt-yB-AKs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tXr-4Y-TnB">
                                 <rect key="frame" x="57" y="478" width="300" height="40"/>
@@ -691,7 +691,7 @@
                                     <constraint firstAttribute="height" constant="40" id="di4-Oo-gnR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="73j-9C-AMn">
                                 <rect key="frame" x="57" y="548" width="300" height="40"/>
@@ -700,7 +700,7 @@
                                     <constraint firstAttribute="height" constant="40" id="poJ-8H-Ghx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ug1-JA-RV0">
                                 <rect key="frame" x="57" y="338" width="300" height="40"/>
@@ -709,7 +709,7 @@
                                     <constraint firstAttribute="height" constant="40" id="zAX-Hn-iSA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cI-SN-WUi">
                                 <rect key="frame" x="132" y="269" width="150" height="40"/>
@@ -733,6 +733,7 @@
                                 </constraints>
                                 <state key="normal" backgroundImage="flecha final"/>
                                 <connections>
+                                    <action selector="PostRegistrar:" destination="O2b-Ew-eNx" eventType="touchUpInside" id="uLx-RJ-KD6"/>
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="k8p-m2-DOw"/>
                                 </connections>
                             </button>
@@ -770,6 +771,12 @@
                         <viewLayoutGuide key="safeArea" id="EYP-mQ-Fr5"/>
                     </view>
                     <navigationItem key="navigationItem" id="rvs-dI-1jg"/>
+                    <connections>
+                        <outlet property="email" destination="gbK-dx-smf" id="OvA-Y7-TRl"/>
+                        <outlet property="nombre" destination="Ug1-JA-RV0" id="Qlc-Db-Ufq"/>
+                        <outlet property="password" destination="tXr-4Y-TnB" id="Bey-4C-Uh3"/>
+                        <outlet property="repeatPassword" destination="73j-9C-AMn" id="uZe-bO-Dmy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gs8-in-vy2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1655,7 +1662,7 @@
         <segue reference="ebn-zZ-eyg"/>
         <segue reference="iKQ-22-7qk"/>
         <segue reference="A5o-5i-BAT"/>
-        <segue reference="Ysi-NF-EZg"/>
+        <segue reference="cRY-hm-G0m"/>
         <segue reference="Nn3-Y2-DqR"/>
     </inferredMetricsTieBreakers>
     <resources>
