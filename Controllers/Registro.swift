@@ -4,33 +4,48 @@ import UIKit
 import Alamofire
 
 class Registro: UIViewController {
-
-    @IBOutlet weak var nombre: UITextField!
-    @IBOutlet weak var email: UITextField!
-    @IBOutlet weak var password: UITextField!
-    @IBOutlet weak var repeatPassword: UITextField!
+    
+    @IBOutlet weak var NombreTextField: UITextField!
+    @IBOutlet weak var EmailTextField: UITextField!
+    @IBOutlet weak var PasswordTextField: UITextField!
+    @IBOutlet weak var RepeatPasswordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
     @IBAction func PostRegistrar(_ sender: Any) {
-        if (repeatPassword == password){
-            let url = URL(string:
-            "http://ec2-54-91-55-219.compute-1.amazonaws.com/api-esports/public/index.php/api/users/registro")
-
-            let json = ["nombre" : nombre.text!, "email" : email.text!, "password" : password.text! ]
-
-            Alamofire.request(url!, method: .post, parameters: json as Parameters,
-            encoding: JSONEncoding.default, headers: nil).responseJSON {
-            response in
-
-                print(response)}
-
-        } else {
+        if PasswordTextField.text! != RepeatPasswordTextField.text! {
+            print("contraseñas incorrectas")
+            return
+        }else{
             
-            print("Contraseñas no coinciden")
+            let userText = NombreTextField.text!
+            let emailText = EmailTextField.text!
+            let passText = PasswordTextField.text!
+            
+            //let user = User(email: emailText, name: userText, password: passText)
+            
+            let user = User(nombre: userText, email: emailText, password: passText)
+            
+            //let postRequest = APIManager(endpoint: "api/register")
+            let postRequest = APIManager(endpoint: "users/registro")
+            
+            //let postRequest = APIRequest(endpoint: "users/create")
+            
+            postRequest.register(user, completion: {result in
+                switch result{
+                case .success(let user):
+                    print("El siguiente usuario ha sido enviado:\(user.email) ")
+                case .failure(let error):
+                    print("Ha ocurrido un error \(error)")
+                    //print(JSONDecoder.decode(User.self))
+                    //print(user.email)
+                }
+            })
         }
     }
-    
 }
+
+
+

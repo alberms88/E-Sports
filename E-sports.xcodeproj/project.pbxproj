@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D1FC3BE25FB96DE008546E6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1FC3BD25FB96DE008546E6 /* User.swift */; };
+		0D1FC3C025FB9FE4008546E6 /* APIManager2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1FC3BF25FB9FE4008546E6 /* APIManager2.swift */; };
 		0D259F1725EE5A8700FD9437 /* ChooseTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D259F1625EE5A8700FD9437 /* ChooseTeam.swift */; };
 		0DF0695825F1169B00E7A7BB /* EquipoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF0695725F1169B00E7A7BB /* EquipoController.swift */; };
 		0DF5DEA925F65D7300A034DE /* NoticiasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF5DEA825F65D7300A034DE /* NoticiasViewController.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D1FC3BD25FB96DE008546E6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0D1FC3BF25FB9FE4008546E6 /* APIManager2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager2.swift; sourceTree = "<group>"; };
 		0D259F1625EE5A8700FD9437 /* ChooseTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTeam.swift; sourceTree = "<group>"; };
 		0DF0695725F1169B00E7A7BB /* EquipoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipoController.swift; sourceTree = "<group>"; };
 		0DF5DEA825F65D7300A034DE /* NoticiasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticiasViewController.swift; sourceTree = "<group>"; };
@@ -66,7 +70,6 @@
 				84D6CA83F41493CE54856A27 /* Pods-E-sports.debug.xcconfig */,
 				E1BF1AF50DB8A999A262ACD1 /* Pods-E-sports.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -115,6 +118,8 @@
 				0DF5DEA825F65D7300A034DE /* NoticiasViewController.swift */,
 				0DF5DEAA25F65D8100A034DE /* DatosNoticia.swift */,
 				0DF641AC25F8FF66005A0810 /* CalendarioController.swift */,
+				0D1FC3BD25FB96DE008546E6 /* User.swift */,
+				0D1FC3BF25FB9FE4008546E6 /* APIManager2.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -246,12 +251,14 @@
 				0E39E94E25E4F87600E1C231 /* ViewController.swift in Sources */,
 				0E39E96625E5002100E1C231 /* Registro.swift in Sources */,
 				0D259F1725EE5A8700FD9437 /* ChooseTeam.swift in Sources */,
+				0D1FC3BE25FB96DE008546E6 /* User.swift in Sources */,
 				0E39E94A25E4F87600E1C231 /* AppDelegate.swift in Sources */,
 				0E39E94C25E4F87600E1C231 /* SceneDelegate.swift in Sources */,
 				0E8FECD725E667550051981F /* ChooseGame.swift in Sources */,
 				0DF0695825F1169B00E7A7BB /* EquipoController.swift in Sources */,
 				0DF5DEAB25F65D8100A034DE /* DatosNoticia.swift in Sources */,
 				0E39E96325E4FF4700E1C231 /* Login.swift in Sources */,
+				0D1FC3C025FB9FE4008546E6 /* APIManager2.swift in Sources */,
 				0DF641AD25F8FF66005A0810 /* CalendarioController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
