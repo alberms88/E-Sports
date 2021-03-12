@@ -23,7 +23,7 @@ struct User: Encodable{
     }
     
     func getDictRegisterApi() -> [String:String] {
-        return ["user":nombre, "email":email, "password": password]
+        return ["nombre":nombre, "email":email, "password": password]
     }
     
     func getDictLogin() -> [String:String] {
