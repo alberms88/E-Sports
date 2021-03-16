@@ -602,7 +602,7 @@
                                     <constraint firstAttribute="height" constant="40" id="ams-LO-UI6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHU-ln-RBW">
                                 <rect key="frame" x="132" y="624" width="150" height="150"/>
@@ -612,7 +612,7 @@
                                 </constraints>
                                 <state key="normal" backgroundImage="flecha final"/>
                                 <connections>
-                                    <segue destination="RDs-IE-RN3" kind="presentation" modalPresentationStyle="fullScreen" id="A5o-5i-BAT"/>
+                                    <action selector="loginTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4nL-hd-kAR"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿No tienes cuenta?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shl-54-0sy">
@@ -659,10 +659,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="NombreTextField" destination="S0u-vk-8HQ" id="Jjg-C4-E0Q"/>
+                        <outlet property="PasswordTextField" destination="FKK-Ss-aSr" id="vd4-pC-qTE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1172" y="96"/>
+            <point key="canvasLocation" x="-1135" y="106"/>
         </scene>
         <!--Registro-->
         <scene sceneID="emZ-aL-VOt">
@@ -847,17 +851,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YgN-4c-soK">
-                                <rect key="frame" x="52" y="374" width="130" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="sEd-TT-hRM"/>
-                                    <constraint firstAttribute="height" constant="80" id="ter-Qc-2SH"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="iPv-NO-xJI" kind="presentation" modalPresentationStyle="fullScreen" id="mnK-JV-gvl"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1d-A3-782">
                                 <rect key="frame" x="20" y="62" width="30" height="26"/>
                                 <constraints>
@@ -872,11 +865,23 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="Ysi-NF-EZg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YgN-4c-soK">
+                                <rect key="frame" x="67" y="374" width="100" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="6H6-cL-oEp"/>
+                                    <constraint firstAttribute="width" constant="100" id="TFM-pw-7wJ"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="lol logo"/>
+                                <connections>
+                                    <segue destination="iPv-NO-xJI" kind="presentation" modalPresentationStyle="fullScreen" id="mnK-JV-gvl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="i8O-1s-sea" firstAttribute="centerY" secondItem="ieI-O4-tkL" secondAttribute="centerY" constant="90" id="66p-zk-Lnf"/>
                             <constraint firstItem="D1d-A3-782" firstAttribute="centerY" secondItem="ieI-O4-tkL" secondAttribute="centerY" constant="-373.25" id="85f-N5-srY"/>
+                            <constraint firstItem="YgN-4c-soK" firstAttribute="centerY" secondItem="ieI-O4-tkL" secondAttribute="centerY" constant="-34" id="AG1-4W-45x"/>
                             <constraint firstItem="gIt-LQ-zFp" firstAttribute="centerX" secondItem="ieI-O4-tkL" secondAttribute="centerX" constant="-90" id="DBP-TM-wFZ"/>
                             <constraint firstItem="gQX-hP-cc4" firstAttribute="centerX" secondItem="ieI-O4-tkL" secondAttribute="centerX" id="E9p-ae-Xas"/>
                             <constraint firstItem="x3T-f3-2c6" firstAttribute="centerY" secondItem="ieI-O4-tkL" secondAttribute="centerY" constant="-287.5" id="FoT-ho-wW5"/>
@@ -884,15 +889,14 @@
                             <constraint firstItem="D1d-A3-782" firstAttribute="centerX" secondItem="ieI-O4-tkL" secondAttribute="centerX" constant="-172" id="JsO-aG-Tqq"/>
                             <constraint firstItem="gw2-s5-MRm" firstAttribute="centerX" secondItem="ieI-O4-tkL" secondAttribute="centerX" constant="90" id="Npc-CN-sPn"/>
                             <constraint firstItem="uG3-sK-G3t" firstAttribute="centerY" secondItem="ieI-O4-tkL" secondAttribute="centerY" constant="214" id="Qls-BR-PbA"/>
-                            <constraint firstItem="YgN-4c-soK" firstAttribute="centerX" secondItem="ieI-O4-tkL" secondAttribute="centerX" constant="-90" id="atn-9e-bio"/>
                             <constraint firstItem="x3T-f3-2c6" firstAttribute="centerX" secondItem="ieI-O4-tkL" secondAttribute="centerX" id="bz9-Sd-2Ff"/>
                             <constraint firstItem="gw2-s5-MRm" firstAttribute="centerY" secondItem="ieI-O4-tkL" secondAttribute="centerY" constant="-34" id="cZE-WX-par"/>
                             <constraint firstItem="gIt-LQ-zFp" firstAttribute="centerY" secondItem="ieI-O4-tkL" secondAttribute="centerY" constant="90" id="cs6-Mj-mmj"/>
-                            <constraint firstItem="YgN-4c-soK" firstAttribute="centerY" secondItem="ieI-O4-tkL" secondAttribute="centerY" constant="-34" id="gca-y4-wDJ"/>
                             <constraint firstItem="gQX-hP-cc4" firstAttribute="centerY" secondItem="ieI-O4-tkL" secondAttribute="centerY" constant="-175" id="luX-Ud-AYg"/>
                             <constraint firstItem="uG3-sK-G3t" firstAttribute="centerX" secondItem="ieI-O4-tkL" secondAttribute="centerX" constant="-90" id="qSi-Zv-dZ4"/>
                             <constraint firstItem="g8t-9R-sYo" firstAttribute="centerX" secondItem="ieI-O4-tkL" secondAttribute="centerX" constant="90" id="t7W-hN-A5f"/>
                             <constraint firstItem="g8t-9R-sYo" firstAttribute="centerY" secondItem="ieI-O4-tkL" secondAttribute="centerY" constant="214" id="wNF-mK-Bfg"/>
+                            <constraint firstItem="YgN-4c-soK" firstAttribute="centerX" secondItem="ieI-O4-tkL" secondAttribute="centerX" constant="-90" id="xH1-1T-D28"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FMg-6x-d5j"/>
                     </view>
@@ -1273,37 +1277,29 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEU-UT-yDc">
-                                <rect key="frame" x="20" y="393" width="150" height="125"/>
+                                <rect key="frame" x="62" y="388" width="120" height="120"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="TBY-9z-Jbs"/>
-                                    <constraint firstAttribute="height" constant="125" id="TNl-lq-ouK"/>
+                                    <constraint firstAttribute="width" constant="120" id="IYb-DX-NbQ"/>
+                                    <constraint firstAttribute="height" constant="120" id="eBk-bJ-RY2"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" backgroundImage="lec logo"/>
                                 <connections>
                                     <segue destination="DgK-Rr-urc" kind="presentation" modalPresentationStyle="fullScreen" id="0Mf-2c-bVy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXV-ZK-Ztd">
-                                <rect key="frame" x="244" y="393" width="150" height="125"/>
+                                <rect key="frame" x="244" y="388" width="120" height="120"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="125" id="Ljs-7O-Wyy"/>
-                                    <constraint firstAttribute="width" constant="150" id="jNh-Y8-57Q"/>
+                                    <constraint firstAttribute="height" constant="120" id="5Tf-9x-EFF"/>
+                                    <constraint firstAttribute="width" constant="120" id="DoE-ku-4NU"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" backgroundImage="LCS"/>
                                 <connections>
                                     <segue destination="DgK-Rr-urc" kind="presentation" modalPresentationStyle="fullScreen" id="iKQ-22-7qk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="479-Xq-RYO">
-                                <rect key="frame" x="244" y="595" width="150" height="125"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="125" id="RU0-Pk-hgr"/>
-                                    <constraint firstAttribute="width" constant="150" id="Ryd-bH-oHc"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                            </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ae1-5L-yPM">
-                                <rect key="frame" x="20" y="595" width="150" height="125"/>
+                                <rect key="frame" x="47" y="595" width="150" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="BgA-gv-vow"/>
                                     <constraint firstAttribute="width" constant="150" id="Fa3-MQ-Hbk"/>
@@ -1324,23 +1320,31 @@
                                     <segue destination="RDs-IE-RN3" kind="presentation" modalPresentationStyle="fullScreen" id="PnB-Q4-QEw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="479-Xq-RYO">
+                                <rect key="frame" x="229" y="595" width="150" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="RU0-Pk-hgr"/>
+                                    <constraint firstAttribute="width" constant="150" id="Ryd-bH-oHc"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="dXV-ZK-Ztd" firstAttribute="centerX" secondItem="AqR-tU-rrd" secondAttribute="centerX" constant="112" id="1zI-5M-HBl"/>
-                            <constraint firstItem="ae1-5L-yPM" firstAttribute="centerX" secondItem="AqR-tU-rrd" secondAttribute="centerX" constant="-112" id="47b-Vp-j9D"/>
-                            <constraint firstItem="479-Xq-RYO" firstAttribute="centerX" secondItem="AqR-tU-rrd" secondAttribute="centerX" constant="112" id="75Q-Fc-8gP"/>
+                            <constraint firstItem="gEU-UT-yDc" firstAttribute="centerX" secondItem="AqR-tU-rrd" secondAttribute="centerX" constant="-85" id="3y3-58-N3z"/>
                             <constraint firstItem="IQu-eU-zAJ" firstAttribute="centerX" secondItem="AqR-tU-rrd" secondAttribute="centerX" constant="-172" id="B5P-MU-K1T"/>
-                            <constraint firstItem="479-Xq-RYO" firstAttribute="centerY" secondItem="AqR-tU-rrd" secondAttribute="centerY" constant="209.5" id="Gwa-JT-nSW"/>
+                            <constraint firstItem="dXV-ZK-Ztd" firstAttribute="centerX" secondItem="AqR-tU-rrd" secondAttribute="centerX" constant="97" id="Bp1-F3-4Zz"/>
+                            <constraint firstItem="dXV-ZK-Ztd" firstAttribute="centerY" secondItem="AqR-tU-rrd" secondAttribute="centerY" id="FUj-1y-DtO"/>
                             <constraint firstItem="IQu-eU-zAJ" firstAttribute="centerY" secondItem="AqR-tU-rrd" secondAttribute="centerY" constant="-374.25" id="ITs-R9-sp2"/>
-                            <constraint firstItem="dXV-ZK-Ztd" firstAttribute="centerY" secondItem="AqR-tU-rrd" secondAttribute="centerY" constant="7.5" id="RDP-af-cn1"/>
+                            <constraint firstItem="ae1-5L-yPM" firstAttribute="centerY" secondItem="AqR-tU-rrd" secondAttribute="centerY" constant="209.5" id="IiH-um-0jW"/>
+                            <constraint firstItem="gEU-UT-yDc" firstAttribute="centerY" secondItem="AqR-tU-rrd" secondAttribute="centerY" id="TZc-rb-UUF"/>
+                            <constraint firstItem="479-Xq-RYO" firstAttribute="centerY" secondItem="AqR-tU-rrd" secondAttribute="centerY" constant="209.5" id="WZ4-eH-5Xw"/>
                             <constraint firstItem="p5J-dU-PYL" firstAttribute="centerX" secondItem="AqR-tU-rrd" secondAttribute="centerX" id="Y54-LR-6H1"/>
-                            <constraint firstItem="gEU-UT-yDc" firstAttribute="centerX" secondItem="AqR-tU-rrd" secondAttribute="centerX" constant="-112" id="huz-dd-2wg"/>
+                            <constraint firstItem="ae1-5L-yPM" firstAttribute="centerX" secondItem="AqR-tU-rrd" secondAttribute="centerX" constant="-85" id="dZW-JA-W85"/>
                             <constraint firstItem="p5J-dU-PYL" firstAttribute="centerY" secondItem="AqR-tU-rrd" secondAttribute="centerY" constant="-287.5" id="iH7-qq-aqr"/>
                             <constraint firstItem="MAP-Pa-0lw" firstAttribute="centerY" secondItem="AqR-tU-rrd" secondAttribute="centerY" constant="-175" id="jF2-he-fUR"/>
+                            <constraint firstItem="479-Xq-RYO" firstAttribute="centerX" secondItem="AqR-tU-rrd" secondAttribute="centerX" constant="97" id="oIR-Ub-F4w"/>
                             <constraint firstItem="MAP-Pa-0lw" firstAttribute="centerX" secondItem="AqR-tU-rrd" secondAttribute="centerX" id="otr-It-ZVp"/>
-                            <constraint firstItem="ae1-5L-yPM" firstAttribute="centerY" secondItem="AqR-tU-rrd" secondAttribute="centerY" constant="209.5" id="qQ4-yO-IQ6"/>
-                            <constraint firstItem="gEU-UT-yDc" firstAttribute="centerY" secondItem="AqR-tU-rrd" secondAttribute="centerY" constant="7.5" id="yaP-vf-0Ut"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="r5S-qN-jby"/>
                     </view>
@@ -1661,14 +1665,14 @@
     <inferredMetricsTieBreakers>
         <segue reference="mnK-JV-gvl"/>
         <segue reference="iKQ-22-7qk"/>
-        <segue reference="A5o-5i-BAT"/>
-        <segue reference="cRY-hm-G0m"/>
+        <segue reference="Ysi-NF-EZg"/>
         <segue reference="Nn3-Y2-DqR"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="5" width="371" height="759"/>
         <image name="AST" width="400" height="400"/>
         <image name="G2E" width="400" height="463"/>
+        <image name="LCS" width="250" height="476"/>
         <image name="MAD" width="400" height="400"/>
         <image name="SKG" width="400" height="400"/>
         <image name="bell.fill" catalog="system" width="128" height="124"/>

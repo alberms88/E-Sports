@@ -25,7 +25,7 @@ class APIManager {
     
     init(endpoint: String) {
         
-        let resourceString = "http://ec2-34-229-152-120.compute-1.amazonaws.com/api-esports/public/index.php/api/\(endpoint)"
+        let resourceString = "http://ec2-54-234-135-238.compute-1.amazonaws.com/api-esports/public/index.php/api/\(endpoint)"
         
         guard let resourceURL = URL(string: resourceString)else {fatalError()}
         
@@ -61,6 +61,10 @@ class APIManager {
             }
         
         
+    }
+    func newLogin(parameters:[String:String])->DataRequest{
+        
+            return Alamofire.request(resourceURL, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil)
     }
     
     //La misma funcion de register pero con un endpoint diferente
@@ -154,7 +158,7 @@ class APIManager {
         
         //realizamos la peticion a la api con la URL, el formato del usuario(JSON).
         
-        Alamofire.request("https://superapi.netlify.app/api/users", method: .get, encoding: JSONEncoding.default, headers: nil).responseData{ response in
+        Alamofire.request(resourceURL, method: .get, encoding: JSONEncoding.default, headers: nil).responseData{ response in
             switch response.result{
                 
                 case .success(let data):

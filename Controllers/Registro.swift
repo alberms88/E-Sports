@@ -1,5 +1,3 @@
-
-
 import UIKit
 import Alamofire
 
@@ -15,23 +13,59 @@ class Registro: UIViewController {
         
     }
     @IBAction func PostRegistrar(_ sender: Any) {
-        if PasswordTextField.text! != RepeatPasswordTextField.text! {
-            print("contraseñas incorrectas")
+        
+        let userText = NombreTextField.text!
+        let emailText = EmailTextField.text!
+        let passText = PasswordTextField.text!
+        let confirmText = RepeatPasswordTextField.text!
+        
+        if userText == ""{
+            print("Usuario vacio")
+            
+            let alert = UIAlertController(title: "Error", message: "Nombre de Usuario invalido", preferredStyle: UIAlertController.Style.alert)
+
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+
+            self.present(alert, animated: true, completion: nil)
+            
             return
+        }else if emailText == ""{
+            print("Email vacio")
+            
+            let alert = UIAlertController(title: "Error", message: "Email invalido", preferredStyle: UIAlertController.Style.alert)
+
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+
+            self.present(alert, animated: true, completion: nil)
+            
+            return
+            
+        }else if passText == ""{
+            print("Contraseña vacia")
+            
+            let alert = UIAlertController(title: "Error", message: "Contraseña invalida", preferredStyle: UIAlertController.Style.alert)
+
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+
+            self.present(alert, animated: true, completion: nil)
+            
+            return
+            
+        }else if passText != confirmText{
+            print("Las contraseñas no coinciden")
+            
+            let alert = UIAlertController(title: "Error", message: "Las contraseñas no coinciden", preferredStyle: UIAlertController.Style.alert)
+
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+
+            self.present(alert, animated: true, completion: nil)
+            
+            return
+            
         }else{
-            
-            let userText = NombreTextField.text!
-            let emailText = EmailTextField.text!
-            let passText = PasswordTextField.text!
-            
-            //let user = User(email: emailText, name: userText, password: passText)
-            
             let user = User(nombre: userText, email: emailText, password: passText)
             
-            //let postRequest = APIManager(endpoint: "api/register")
             let postRequest = APIManager(endpoint: "users/registro")
-            
-            //let postRequest = APIRequest(endpoint: "users/create")
             
             postRequest.register(user, completion: {result in
                 switch result{
@@ -46,6 +80,3 @@ class Registro: UIViewController {
         }
     }
 }
-
-
-
