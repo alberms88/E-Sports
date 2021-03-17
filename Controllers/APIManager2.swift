@@ -25,7 +25,7 @@ class APIManager {
     
     init(endpoint: String) {
         
-        let resourceString = "http://ec2-54-234-135-238.compute-1.amazonaws.com/api-esports/public/index.php/api/\(endpoint)"
+        let resourceString = "http://ec2-52-207-232-121.compute-1.amazonaws.com/api-esports/public/index.php/api/\(endpoint)"
         
         guard let resourceURL = URL(string: resourceString)else {fatalError()}
         

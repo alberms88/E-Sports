@@ -789,7 +789,7 @@
         <!--Choose Game-->
         <scene sceneID="0w6-rd-vFh">
             <objects>
-                <viewController storyboardIdentifier="ChooseG" id="RDs-IE-RN3" customClass="ChooseGame" customModule="E_sports" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChooseGame" id="RDs-IE-RN3" customClass="ChooseGame" customModule="E_sports" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ieI-O4-tkL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
