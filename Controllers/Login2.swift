@@ -2,9 +2,9 @@
 import Foundation
 import UIKit
 
-public var datosUsuario = "USER_KEY"
+public var DatosUsuario = "USER_KEY"
 
-class Login: UIViewController {
+class Login2: UIViewController {
 
     @IBOutlet weak var NombreTextField: UITextField!
     @IBOutlet weak var PasswordTextField: UITextField!
@@ -33,22 +33,21 @@ class Login: UIViewController {
                 print("El siguiente usuario ha sido enviado:\(user.nombre) ")
                 UserDefaults.standard.set(user.nombre, forKey: datosUsuario)
                 UserDefaults.standard.synchronize()
-                /*let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 
                 let vc = storyboard.instantiateViewController(identifier: "ChooseGame") as! ChooseGame
                         
                 vc.modalPresentationStyle = .overFullScreen
                 
-                self.present(vc, animated: true)*/
-                self.performSegue(withIdentifier: "NavegacionSegue", sender: nil)
+                self.present(vc, animated: true)
                 
             case .failure(let error):
                 print("Ha ocurrido un error \(error)")
                 
                 let alert = UIAlertController(title: "Error", message: "Datos incorrectos", preferredStyle: UIAlertController.Style.alert)
-                
+
                 alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
-                
+
                 self.present(alert, animated: true, completion: nil)
                 return
             }
@@ -59,3 +58,4 @@ class Login: UIViewController {
 
 
 }
+

@@ -10,13 +10,13 @@
 		0D1FC3BE25FB96DE008546E6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1FC3BD25FB96DE008546E6 /* User.swift */; };
 		0D1FC3C025FB9FE4008546E6 /* APIManager2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1FC3BF25FB9FE4008546E6 /* APIManager2.swift */; };
 		0D259F1725EE5A8700FD9437 /* ChooseTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D259F1625EE5A8700FD9437 /* ChooseTeam.swift */; };
+		0DA235BC260227B4005EFE2D /* Login2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA235BB260227B4005EFE2D /* Login2.swift */; };
 		0DF0695825F1169B00E7A7BB /* EquipoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF0695725F1169B00E7A7BB /* EquipoController.swift */; };
 		0DF5DEA925F65D7300A034DE /* NoticiasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF5DEA825F65D7300A034DE /* NoticiasViewController.swift */; };
 		0DF5DEAB25F65D8100A034DE /* DatosNoticia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF5DEAA25F65D8100A034DE /* DatosNoticia.swift */; };
 		0DF641AD25F8FF66005A0810 /* CalendarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF641AC25F8FF66005A0810 /* CalendarioController.swift */; };
 		0E39E94A25E4F87600E1C231 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E39E94925E4F87600E1C231 /* AppDelegate.swift */; };
 		0E39E94C25E4F87600E1C231 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E39E94B25E4F87600E1C231 /* SceneDelegate.swift */; };
-		0E39E94E25E4F87600E1C231 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E39E94D25E4F87600E1C231 /* ViewController.swift */; };
 		0E39E95125E4F87600E1C231 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E39E94F25E4F87600E1C231 /* Main.storyboard */; };
 		0E39E95325E4F87700E1C231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E39E95225E4F87700E1C231 /* Assets.xcassets */; };
 		0E39E95625E4F87700E1C231 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E39E95425E4F87700E1C231 /* LaunchScreen.storyboard */; };
@@ -31,6 +31,7 @@
 		0D1FC3BD25FB96DE008546E6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0D1FC3BF25FB9FE4008546E6 /* APIManager2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager2.swift; sourceTree = "<group>"; };
 		0D259F1625EE5A8700FD9437 /* ChooseTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTeam.swift; sourceTree = "<group>"; };
+		0DA235BB260227B4005EFE2D /* Login2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login2.swift; sourceTree = "<group>"; };
 		0DF0695725F1169B00E7A7BB /* EquipoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipoController.swift; sourceTree = "<group>"; };
 		0DF5DEA825F65D7300A034DE /* NoticiasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticiasViewController.swift; sourceTree = "<group>"; };
 		0DF5DEAA25F65D8100A034DE /* DatosNoticia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatosNoticia.swift; sourceTree = "<group>"; };
@@ -38,7 +39,6 @@
 		0E39E94625E4F87600E1C231 /* E-sports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-sports.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E39E94925E4F87600E1C231 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E39E94B25E4F87600E1C231 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0E39E94D25E4F87600E1C231 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0E39E95025E4F87600E1C231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E39E95225E4F87700E1C231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E39E95525E4F87700E1C231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -108,8 +108,8 @@
 		0E39E96125E4FF0300E1C231 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0E39E94D25E4F87600E1C231 /* ViewController.swift */,
 				0E39E96225E4FF4700E1C231 /* Login.swift */,
+				0DA235BB260227B4005EFE2D /* Login2.swift */,
 				0E39E96525E5002100E1C231 /* Registro.swift */,
 				0E8FECD625E667550051981F /* ChooseGame.swift */,
 				0EB3AB9725E87793003D0CBD /* ChooseLeague.swift */,
@@ -248,10 +248,10 @@
 			files = (
 				0DF5DEA925F65D7300A034DE /* NoticiasViewController.swift in Sources */,
 				0EB3AB9825E87793003D0CBD /* ChooseLeague.swift in Sources */,
-				0E39E94E25E4F87600E1C231 /* ViewController.swift in Sources */,
 				0E39E96625E5002100E1C231 /* Registro.swift in Sources */,
 				0D259F1725EE5A8700FD9437 /* ChooseTeam.swift in Sources */,
 				0D1FC3BE25FB96DE008546E6 /* User.swift in Sources */,
+				0DA235BC260227B4005EFE2D /* Login2.swift in Sources */,
 				0E39E94A25E4F87600E1C231 /* AppDelegate.swift in Sources */,
 				0E39E94C25E4F87600E1C231 /* SceneDelegate.swift in Sources */,
 				0E8FECD725E667550051981F /* ChooseGame.swift in Sources */,
